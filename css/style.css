@@ -16,3 +16,14 @@
   color: darkgreen;
 }
 
+.user-image{
+  max-width: 200px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea{
+  border-width: 3px !important;
+} 
+
+.boton-pag-registrarse{
+  width: 100px;
+}

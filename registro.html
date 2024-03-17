@@ -50,8 +50,94 @@
     <!-- Contenido principal de la pagina -->
     <main role="main">
       <div class="container">
-        <section class="text-center">
-          
+        <section>
+          <h1>Registro de cliente</h1>
+          <br>
+          <form class="row g-3 needs-validation" action="" novalidate> <!--van todos los controles graficos para poder registrar al cliente-->
+            <div class="container-fluid">
+              <div class="row">
+
+                <!--Campos del registro del usuario-->
+                <div class="col-sm-12 col-md-6">
+
+                  <div class="mb-3 fw-bold">
+                    <label for="rut" class="form-label">RUT</label>
+                    <input type="text" class="form-control" id="rut" placeholder="Ej 12243033-2" required>
+                    <div class="invalid-feedback">Debe llenar el campo RUT</div>
+                  </div>
+
+                  <div class="mb-3 fw-bold">
+                    <label for="nombres" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="nombres" placeholder="Escriba todos sus nombres" required>
+                    <div class="invalid-feedback">Debe llenar el campo Nombres</div>
+                  </div>
+
+                  <div class="mb-3 fw-bold">
+                    <label for="apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control" id="apellidos" placeholder="Escriba todos sus apellidos" required>
+                    <div class="invalid-feedback">Debe llenar el campo Apellidos</div>
+                  </div>
+
+                  <div class="mb-3 fw-bold">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ej dana.munozo@duocuc.cl" required>
+                    <div id="emailhelp" class="form-text">Nunca compartiremos su correo electronico con nadie mas</div>
+                    <div class="invalid-feedback">Debe llenar el campo correo electrónico</div>
+                  </div>
+
+                  <div class="mb-3 fw-bold">
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <textarea class="form-control" id="direccion" rows="3" placeholder="Escriba su domicilio" required></textarea>
+                    <div class="invalid-feedback">Debe llenar el campo Dirección</div>
+                  </div>
+
+                  <div class="mb-3" form-check>
+                    <input class="form-check-label" type="checkbox" value="" id="subscripcion">
+                    <label class="form-check-label" for="subscripcion">
+                      <strong>
+                      Subscribirme a la fundación
+                      </strong>
+                    </label>
+                    <div id="subscripcionhelp" class="form-text">
+                      Deseo subscribirme con un aporte de $3.000 mensuales y obtener un 5% de descuento  en mis compras
+                    </div>
+                  </div>
+
+                  <div class="mb-3 fw-bold">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="paswoord" required>
+                    <div class="invalid-feedback">Debe llenar el campo Contraseña</div>
+                  </div>
+
+                  <div class="mb-3 fw-bold">
+                    <label for="password2" class="form-label">Repetir contraseña</label>
+                    <input type="password" class="form-control" id="paswoord2" required>
+                    <div class="invalid-feedback">Debe repetir la contraseña</div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary boton-pag-registrarse">Registrarse</button>
+                  <button type="reset" class="btn btn-primary boton-pag-registrarse">Limpiar</button>
+                </div>
+
+                <!--Foto de perfil-->
+                <div class="col-sm-12 col-md-6">
+                  <table>
+                    <tr>
+                      <td>
+                        <img src="img/perfil_usuario.webp" alt="" class="user-image">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="file" class="form-control">
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+          </form>
         </section>
       </div>
     </main>
@@ -92,7 +178,7 @@
        </p>
       </div>
     </footer>
-
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
