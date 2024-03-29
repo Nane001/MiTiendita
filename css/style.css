@@ -26,4 +26,19 @@ input[type="text"], input[type="email"], input[type="password"], textarea{
 
 .boton-pag-registrarse{
   width: 100px;
+  
 }
+.body{
+  color:pink;
+  background-image: url('img/c1.jpg'); 
+  background-position: center;
+}
+
+
+
+.btn-pink {
+  color: #fff; /* Color de texto blanco */
+  background-color: #ff69b4; /* Color de fondo rosa */
+  border-color: #ff69b4; /* Color de borde rosa */
+}
+
