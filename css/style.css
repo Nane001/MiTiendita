@@ -4,8 +4,8 @@
 }
 
 .thumbnail-product{
-  height: 150px !important;
-  max-width: 150px !important;
+  height: 200px !important;
+  max-width: 200px !important;
 
 }
 
@@ -42,3 +42,10 @@ input[type="text"], input[type="email"], input[type="password"], textarea{
   border-color: #ff69b4; /* Color de borde rosa */
 }
 
+.borde_nosotros{
+  vertical-align: top; width:20%;
+  border-top: 7px solid rgb(232, 155, 194); 
+  border-bottom: 7px solid rgb(232, 155, 194); 
+  border-left: 7px solid rgb(232, 155, 194); 
+  border-right: 7px solid rgb(232, 155, 194);
+}
